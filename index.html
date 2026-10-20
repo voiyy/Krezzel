@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Krezzel helps you create a professional job application letter in Indonesian or English." />
+    <title>Krezzel — Surat lamaran yang siap dikirim</title>
+    <!-- Tailwind Play CDN is intentionally used for this no-build prototype. For production, compile Tailwind locally. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { theme: { extend: { colors: { ink: '#073f70', teal: '#07979c', mist: '#f2f7f7', paper: '#fffefd' }, fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'], serif: ['Georgia', 'Cambria', 'serif'] } } } };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-mist font-sans text-slate-800 antialiased">
+    <a class="skip-link" href="#main-content">Lewati ke isi utama</a>
+    <header class="site-header">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5" aria-label="Navigasi utama">
+        <a class="flex items-center gap-2.5" href="#top" aria-label="Krezzel beranda">
+          <img class="brand-logo" src="assets/krezzel-logo.png" alt="Logo Krezzel" />
+          <span class="text-lg font-bold tracking-tight text-ink">Krezzel</span>
+        </a>
+        <div class="hidden items-center gap-7 text-sm font-medium text-slate-600 md:flex">
+          <a href="#how-it-works">Cara kerja</a><a href="#templates">Template</a><a href="#privacy">Privasi</a>
+        </div>
+        <button class="btn btn-primary btn-small" type="button" data-start>Mulai menulis <span aria-hidden="true">→</span></button>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="landing" class="landing" aria-labelledby="hero-title">
+        <div class="mx-auto grid max-w-7xl gap-12 px-5 pb-16 pt-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:pb-24 lg:pt-20">
+          <div>
+            <p class="eyebrow">UNTUK LAMARAN YANG LEBIH TERARAH</p>
+            <h1 id="hero-title" class="mt-4 max-w-xl text-4xl font-bold leading-[1.08] tracking-tight text-slate-950 sm:text-5xl">Surat lamaran yang terasa <em>seperti Anda.</em></h1>
+            <p class="mt-6 max-w-lg text-lg leading-8 text-slate-600">Susun surat lamaran formal Indonesia atau cover letter bahasa Inggris dari pengalaman yang benar-benar Anda miliki—dengan panduan yang tidak berbelit.</p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <button class="btn btn-primary" type="button" data-start>Buat surat lamaran <span aria-hidden="true">→</span></button>
+              <a class="btn btn-quiet" href="#how-it-works">Lihat cara kerjanya</a>
+            </div>
+            <p class="mt-5 text-sm text-slate-500"><span class="mr-1 text-teal">●</span> Dikerjakan di browser Anda. Tidak perlu akun.</p>
+          </div>
+          <div class="hero-document-wrap" aria-label="Contoh tampilan surat lamaran">
+            <div class="hero-document">
+              <div class="flex items-start justify-between border-b border-slate-200 pb-5"><span class="doc-monogram">K.</span><span class="text-right text-[10px] font-semibold uppercase tracking-[.16em] text-slate-400">Application letter<br />2026</span></div>
+              <p class="mt-7 text-xs text-slate-500">Jakarta, 20 Oktober 2026</p>
+              <p class="mt-4 text-sm font-semibold text-slate-800">Yth. Tim Rekrutmen<br />Arunika Studio</p>
+              <p class="mt-5 font-serif text-sm leading-6 text-slate-700">Dengan hormat,<br /><br />Saya tertarik untuk mengajukan lamaran sebagai Product Designer di Arunika Studio. Pengalaman saya merancang alur produk digital dan bekerja lintas fungsi membuat saya siap berkontribusi pada tim Anda.</p>
+              <div class="mt-7 h-1 w-24 bg-teal"></div>
+              <p class="mt-3 text-xs font-semibold text-ink">Nadia Pratama</p>
+            </div>
+            <div class="doc-note"><span aria-hidden="true">✓</span> Struktur jelas, tetap personal</div>
+          </div>
+        </div>
+
+        <section id="how-it-works" class="border-y border-slate-200 bg-white py-14" aria-labelledby="how-title">
+          <div class="mx-auto max-w-7xl px-5"><div class="flex flex-wrap items-end justify-between gap-4"><div><p class="eyebrow">ALUR YANG RINGKAS</p><h2 id="how-title" class="mt-2 text-2xl font-bold tracking-tight text-slate-950">Dari detail Anda ke surat yang siap diperiksa.</h2></div><p class="max-w-sm text-sm leading-6 text-slate-500">Kami mengutamakan informasi yang relevan, bukan janji atau riwayat yang dibuat-buat.</p></div>
+            <ol class="mt-9 grid gap-6 md:grid-cols-3"><li class="process-item"><span>01</span><h3>Pilih bahasa &amp; format</h3><p>Gunakan konvensi surat formal Indonesia atau cover letter internasional.</p></li><li class="process-item"><span>02</span><h3>Tambahkan konteks</h3><p>Masukkan peran, perusahaan, pengalaman, dan alasan Anda melamar.</p></li><li class="process-item"><span>03</span><h3>Tinjau &amp; kirim</h3><p>Edit teks, salin, atau simpan sebagai PDF langsung dari browser.</p></li></ol>
+          </div>
+        </section>
+
+        <section id="templates" class="mx-auto max-w-7xl px-5 py-16" aria-labelledby="template-title">
+          <div class="grid gap-8 lg:grid-cols-[.7fr_1.3fr]"><div><p class="eyebrow">TIGA FORMAT BERMANFAAT</p><h2 id="template-title" class="mt-2 text-3xl font-bold tracking-tight text-slate-950">Tampilan berubah untuk tujuan yang berbeda.</h2><p class="mt-4 leading-7 text-slate-600">Bukan hanya warna aksen. Setiap template mengatur ulang ritme, hierarki, dan karakter dokumen.</p></div><div class="grid gap-4 sm:grid-cols-3"><article class="landing-template"><div class="mini-page classic-mini"></div><h3>Classic Formal</h3><p>Untuk format yang familiar dan tenang.</p></article><article class="landing-template"><div class="mini-page modern-mini"></div><h3>Modern Professional</h3><p>Untuk peran yang lebih kontemporer.</p></article><article class="landing-template"><div class="mini-page minimal-mini"></div><h3>Minimal International</h3><p>Untuk aplikasi lintas negara.</p></article></div></div>
+        </section>
+        <section id="privacy" class="mx-auto max-w-7xl px-5 pb-16"><div class="privacy-callout"><div><p class="eyebrow">PRIVASI SECARA SEDERHANA</p><h2 class="mt-2 text-2xl font-bold tracking-tight text-white">Data surat Anda tetap di perangkat ini.</h2></div><p>Versi ini tidak mengirim data formulir ke server. Anda dapat menghapus isian kapan saja dengan memulai surat baru.</p></div></section>
+      </section>
+
+      <section id="workspace" class="hidden min-h-screen bg-[#eef4f4]" aria-labelledby="workspace-title">
+        <div class="workspace-topbar"><div class="mx-auto flex max-w-[1600px] items-center justify-between gap-3 px-4 py-3 sm:px-6"><button id="back-to-landing" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-ink" type="button"><span aria-hidden="true">←</span><span class="hidden sm:inline">Kembali</span></button><div class="flex items-center gap-2"><img class="brand-logo" src="assets/krezzel-logo.png" alt="" /><span id="workspace-title" class="font-bold tracking-tight text-ink">Krezzel</span></div><button id="new-letter" class="text-sm font-semibold text-slate-600 hover:text-ink" type="button">Surat baru</button></div></div>
+        <div class="mx-auto max-w-[1600px] px-4 py-5 sm:px-6">
+          <div class="mb-5 flex flex-wrap items-center justify-between gap-3"><div><p class="eyebrow">RUANG KERJA</p><h1 class="mt-1 text-2xl font-bold tracking-tight text-slate-950">Buat surat lamaran Anda</h1></div><p class="text-sm text-slate-500"><span class="inline-block h-2 w-2 rounded-full bg-teal"></span> Hanya tersimpan di browser ini</p></div>
+          <div class="mobile-switcher" role="tablist" aria-label="Tampilan ruang kerja"><button class="active" type="button" role="tab" aria-selected="true" data-mobile-view="form">Detail</button><button type="button" role="tab" aria-selected="false" data-mobile-view="preview">Pratinjau</button></div>
+          <div class="workspace-grid">
+            <aside class="editor-panel" aria-label="Informasi surat">
+              <form id="letter-form" novalidate>
+                <section class="form-section"><div class="section-head"><span class="step">1</span><div><h2>Bahasa &amp; template</h2><p>Atur konvensi dan tampilan dokumen.</p></div></div>
+                  <fieldset><legend class="sr-only">Bahasa dokumen</legend><div class="choice-grid"><label class="choice-card"><input type="radio" name="language" value="id" checked /><span><strong>Bahasa Indonesia</strong><small>Surat lamaran formal</small></span></label><label class="choice-card"><input type="radio" name="language" value="en" /><span><strong>English</strong><small>Professional cover letter</small></span></label></div></fieldset>
+                  <div class="mt-4"><label class="field-label" for="template">Template</label><select id="template" name="template"><option value="classic">Classic Formal</option><option value="modern">Modern Professional</option><option value="minimal">Minimal International</option></select></div>
+                </section>
+                <section class="form-section"><div class="section-head"><span class="step">2</span><div><h2>Tentang Anda</h2><p>Informasi kontak muncul di bagian akhir surat.</p></div></div>
+                  <div class="field-grid"><div class="field-span"><label class="field-label" for="fullName">Nama lengkap <b aria-hidden="true">*</b></label><input id="fullName" name="fullName" autocomplete="name" required placeholder="Contoh: Salsabila Putri" /><p class="field-error" id="fullName-error"></p></div><div><label class="field-label" for="email">Email <b aria-hidden="true">*</b></label><input id="email" name="email" type="email" autocomplete="email" required placeholder="nama@email.com" /><p class="field-error" id="email-error"></p></div><div><label class="field-label" for="phone">Telepon <span>opsional</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+62 812 3456 7890" /></div><div class="field-span"><label class="field-label" for="location">Lokasi / alamat <span>opsional</span></label><input id="location" name="location" autocomplete="address-level2" placeholder="Bandung, Jawa Barat" /></div><div class="field-span"><label class="field-label" for="education">Pendidikan <span>opsional</span></label><input id="education" name="education" placeholder="S1 Sistem Informasi, Universitas Indonesia" /></div></div>
+                </section>
+                <section class="form-section"><div class="section-head"><span class="step">3</span><div><h2>Tujuan lamaran</h2><p>Fokuskan surat pada peran dan organisasi.</p></div></div>
+                  <div class="field-grid"><div><label class="field-label" for="jobTitle">Posisi yang dituju <b aria-hidden="true">*</b></label><input id="jobTitle" name="jobTitle" required placeholder="Product Designer" /><p class="field-error" id="jobTitle-error"></p></div><div><label class="field-label" for="company">Nama perusahaan <b aria-hidden="true">*</b></label><input id="company" name="company" required placeholder="Nama perusahaan" /><p class="field-error" id="company-error"></p></div><div class="field-span"><label class="field-label" for="recruiter">Nama perekrut / manajer <span>opsional</span></label><input id="recruiter" name="recruiter" placeholder="Ibu / Bapak Nama atau Hiring Team" /></div><div class="field-span"><label class="field-label" for="requirements">Kebutuhan posisi <span>opsional</span></label><textarea id="requirements" name="requirements" rows="3" placeholder="Apa yang dicari dari kandidat? Tempel ringkasan lowongan di sini."></textarea><p class="field-help">Gunakan poin penting, bukan seluruh iklan lowongan.</p></div></div>
+                </section>
+                <section class="form-section"><div class="section-head"><span class="step">4</span><div><h2>Alasan &amp; bukti</h2><p>Hanya tulis hal yang dapat Anda pertanggungjawabkan.</p></div></div>
+                  <div class="field-grid"><div class="field-span"><label class="field-label" for="experience">Pengalaman relevan <span>opsional</span></label><textarea id="experience" name="experience" rows="4" placeholder="Jelaskan pengalaman, proyek, atau tanggung jawab yang relevan."></textarea></div><div class="field-span"><label class="field-label" for="skills">Keahlian / pencapaian <span>opsional</span></label><textarea id="skills" name="skills" rows="3" placeholder="Contoh: riset pengguna, Figma, kolaborasi lintas tim."></textarea></div><div class="field-span"><label class="field-label" for="motivation">Mengapa peran ini? <span>opsional</span></label><textarea id="motivation" name="motivation" rows="3" placeholder="Jelaskan ketertarikan Anda pada peran atau perusahaan ini."></textarea></div></div>
+                </section>
+              </form>
+            </aside>
+            <section class="preview-column" aria-labelledby="preview-title">
+              <div class="preview-toolbar"><div><p class="eyebrow">DOKUMEN ANDA</p><h2 id="preview-title">Pratinjau langsung</h2></div><div class="flex flex-wrap gap-2"><button class="icon-button" type="button" id="copy-letter" title="Salin teks surat">Salin</button><button class="icon-button" type="button" id="print-letter">Cetak</button><button class="btn btn-primary btn-small" type="button" id="export-pdf">Simpan PDF</button></div></div>
+              <p class="preview-notice" id="preview-notice" role="status">Lengkapi bidang bertanda * untuk membuat surat yang siap dikirim.</p>
+              <div class="document-stage"><article id="letter-preview" class="letter-page classic" aria-live="polite" aria-label="Pratinjau surat lamaran"><div id="letter-content"></div></article></div>
+              <div class="generated-editor"><div class="flex items-center justify-between gap-3"><div><h3>Teks yang dapat diedit</h3><p>Ubah kata-kata ini sebelum menyalin atau mencetak.</p></div><button id="regenerate" class="text-sm font-semibold text-ink underline underline-offset-4" type="button">Buat ulang dari isian</button></div><label class="sr-only" for="generated-text">Teks surat yang dapat diedit</label><textarea id="generated-text" rows="13"></textarea></div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <dialog id="reset-dialog" aria-labelledby="reset-title"><div class="dialog-inner"><p class="eyebrow">MULAI ULANG</p><h2 id="reset-title">Hapus isian surat ini?</h2><p>Semua informasi dan teks yang sedang Anda kerjakan akan dihapus dari halaman ini.</p><div class="mt-6 flex justify-end gap-3"><button class="btn btn-quiet" type="button" id="cancel-reset">Batal</button><button class="btn btn-danger" type="button" id="confirm-reset">Hapus dan mulai baru</button></div></div></dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <footer class="landing-footer"><div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-5 py-7"><div class="flex items-center gap-2"><img class="brand-logo" src="assets/krezzel-logo.png" alt="" /><span class="font-bold text-ink">Krezzel</span></div><p>Alat penulisan surat lamaran yang bekerja secara lokal di browser Anda.</p><a href="#top">Kembali ke atas ↑</a></div></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
