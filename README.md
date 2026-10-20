@@ -20,6 +20,7 @@ The project uses the Tailwind Play CDN to keep the prototype dependency-free. Fo
 - `styles.css` — document typography, responsive behavior, print styling, and components not conveniently expressed in utilities.
 - `app.js` — safe form reading, validation, local letter generation, preview rendering, copy, print, and reset interactions.
 - `assets/krezzel-logo.png` — supplied, unmodified Krezzel brand asset.
+- `assets/krezzel-mark-transparent.png` — transparent, cropped navigation mark derived from the supplied logo; the original asset remains preserved.
 
 ## Privacy
 
